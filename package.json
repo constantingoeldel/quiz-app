@@ -1,0 +1,22 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "description": "A web-app to test yourself",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/constantingoeldel/quiz-app.git"
+  },
+  "author": "Constantin Goeldel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/constantingoeldel/quiz-app/issues"
+  },
+  "homepage": "https://github.com/constantingoeldel/quiz-app#readme",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}
