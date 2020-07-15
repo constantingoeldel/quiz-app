@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -11,22 +16,32 @@
     </header>
     <main>
       <form class="create">
-        <h2 class="create-h2">Neue Frage hinzufügen</h2>
-        <input class="create__question" type="text" />
-        <h2>Dazugehörige Antwort</h2>
-        <input type="text" class="create__answer" />
-        <h2>Tags hinzufügen</h2>
-        <input type="text" class="create__tags" />
+        <h2 class="create-h2">Neue Frage hinzufügen:</h2>
+        <textarea class="create__question"></textarea>
+        <h2>Dazugehörige Antwort:</h2>
+        <textarea class="create__answer"></textarea>
+        <h2>Tags hinzufügen:</h2>
+        <textarea class="create__tags"></textarea>
         <button class="create__submit">Fertig</button>
       </form>
     </main>
     <footer class="footer">
-      <nav class="footer__nav">
-        <a href="index.html">IMG</a>
-        <a href="bookmarks.html">IMG</a>
-        <a href="create.html">IMG</a>
-        <a href="profile.html">IMG</a>
-      </nav>
+      <footer class="footer">
+        <nav class="footer__nav">
+          <a href="index.html"
+            ><img src="/img/svg/list.svg" alt="Home" />Home</a
+          >
+          <a href="bookmarks.html"
+            ><img src="/img/svg/003-bookmark.svg" alt="bookmarks" />Marked</a
+          >
+          <a href="create.html"
+            ><img src="/img/svg/write.svg" alt="create" />Create</a
+          >
+          <a href="profile.html"
+            ><img src="/img/svg/002-user.svg" alt="profile" />Profile</a
+          >
+        </nav>
+      </footer>
     </footer>
   </body>
 </html>

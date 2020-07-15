@@ -1,9 +1,131 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  background-color: lightgreen;
   font-size: 112.5%;
-  background: hotpink;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  top: 0;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 80px;
+  box-shadow: 0px 12px 45px -15px rgba(0, 0, 0, 0.46);
+  padding: 10px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: white;
+}
+h1 {
+  padding: 10px;
+  text-align: center;
+  margin: 0px;
+}
+h2 {
+  padding: 20px 0 0 15px;
+  margin: 0;
+}
+p {
+  padding: 15px;
+  margin: 0;
+}
+main {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+.card {
+  background-color: rgb(63, 161, 223);
+  position: relative;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 5px 12px 45px -15px rgba(0, 0, 0, 0.46);
+  margin-bottom: 100px;
+}
+.card__bookmark {
+  padding: 10px;
+  position: absolute;
+  scale: 2;
+  top: 25px;
+  right: 25px;
+}
+button,
+.card__button {
+  all: unset;
+  padding: 20px;
+  margin: 15px;
+  border-color: black;
+  border-width: 3px;
+  border-style: solid;
+  font-size: 1em;
+}
+button,
+.card__button:hover {
+  background-color: white;
+}
+.create__submit {
+  border-color: rgb(63, 161, 223);
+}
+.card__answer {
+  visibility: hidden;
+}
+.card__button:active + .card__answer {
+  visibility: unset;
+}
+.card__tags {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  overflow: scroll;
+}
+.card__tags > li {
+  background-color: white;
+  width: fit-content;
+  padding: 5px;
+  margin: 5px;
+}
+.create__question,
+.create__answer,
+.create__tags {
+  padding: 10px;
+  margin: 10px;
+  font-size: 120%;
+  width: 90%;
+}
+
+footer {
+  position: fixed;
+  max-height: 90px;
+  min-height: 90px;
+  bottom: 0;
+  width: 100%;
+  z-index: 99;
+  background: linear-gradient(
+    to right,
+    rgba(255, 84, 41, 1) 0%,
+    rgba(233, 53, 158, 1) 0%,
+    rgba(240, 40, 77, 1) 26%,
+    rgba(241, 93, 30, 1) 68%,
+    rgba(241, 153, 30, 1) 100%
+  );
+}
+.footer__nav {
+  display: flex;
+  margin: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.footer__nav > a {
+  text-decoration: none;
+  color: black;
+  font-size: 100%;
+  border: 2px;
+}
+.footer__nav > a > img {
+  max-height: 50px;
+  padding: 15px;
 }
