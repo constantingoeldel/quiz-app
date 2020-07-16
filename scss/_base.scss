@@ -34,7 +34,7 @@ p {
 }
 main {
   margin-top: 10px;
-  margin-bottom: 90px;
+  margin-bottom: 120px;
 }
 .card {
   background-color: rgb(63, 161, 223);
@@ -42,7 +42,7 @@ main {
   border-radius: 10px;
   margin: 20px;
   box-shadow: 5px 12px 45px -15px rgba(0, 0, 0, 0.46);
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .card__bookmark {
   padding: 10px;
@@ -87,6 +87,18 @@ button,
   padding: 5px;
   margin: 5px;
 }
+.profile__tags {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  display: inline-block;
+}
+.profile__tags > li {
+  width: fit-content;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(63, 161, 223);
+}
 .create__question,
 .create__answer,
 .create__tags {
@@ -95,11 +107,13 @@ button,
   font-size: 120%;
   width: 90%;
 }
+.profile__picture {
+  border-radius: 10px;
+  margin: 20px;
+}
 
 footer {
   position: fixed;
-  max-height: 90px;
-  min-height: 90px;
   bottom: 0;
   width: 100%;
   z-index: 99;
@@ -114,18 +128,40 @@ footer {
 }
 .footer__nav {
   display: flex;
-  margin: 10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   justify-content: space-evenly;
+  padding: 10px;
 }
 .footer__nav > a {
   text-decoration: none;
   color: black;
   font-size: 100%;
-  border: 2px;
+  padding: 5px;
 }
 .footer__nav > a > img {
   max-height: 50px;
   padding: 15px;
+}
+.footer__active {
+  border: white 2px solid;
+  border-radius: 10px;
+}
+@media (min-width: 500px) {
+  .card {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 600px) {
+  .card {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
 }
