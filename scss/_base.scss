@@ -111,6 +111,10 @@ button,
   border-radius: 10px;
   margin: 20px;
 }
+.bio {
+  padding: 20px;
+  margin-right: 10px;
+}
 
 footer {
   position: fixed;
@@ -148,19 +152,22 @@ footer {
   border-radius: 10px;
 }
 @media (min-width: 500px) {
-  .card {
+  .card,
+  form {
     margin-left: 10%;
     margin-right: 10%;
   }
 }
 @media (min-width: 600px) {
-  .card {
+  .card,
+  form {
     margin-left: 20%;
     margin-right: 20%;
   }
 }
 @media (min-width: 700px) {
-  .card {
+  .card,
+  form {
     margin-left: 25%;
     margin-right: 25%;
   }
