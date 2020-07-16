@@ -1,0 +1,20 @@
+.profile__tags {
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+}
+.profile__tags > li {
+  display: inline-block;
+  padding: 5px;
+  width: fit-content;
+  margin: 5px;
+  background-color: rgb(63, 161, 223);
+}
+.profile__picture {
+  border-radius: 10px;
+  margin: 20px;
+}
+.bio {
+  padding: 20px;
+  margin-right: 10px;
+}
