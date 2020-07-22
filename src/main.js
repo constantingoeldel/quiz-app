@@ -10,6 +10,13 @@ const navBookmarks = get(".nav__bookmarks");
 const navCreate = get(".nav__create");
 const navProfile = get(".nav__profile");
 
+// Answer Toggle
+const answerButton = get(".card__button");
+const answerText = get(".card__answer");
+answerButton.addEventListener("click", () => {
+  answerText.classList.toggle("blurred");
+});
+
 // Nav Event Listeners
 navIndex.addEventListener("click", () => {
   nav(index);

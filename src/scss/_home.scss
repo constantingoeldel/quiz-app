@@ -27,12 +27,6 @@ button,
     background-color: white;
   }
 }
-.card__answer {
-  visibility: hidden;
-}
-.card__button:active + .card__answer {
-  visibility: unset;
-}
 .card__tags {
   list-style-type: none;
   padding: 10px;

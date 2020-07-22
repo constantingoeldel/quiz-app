@@ -9,7 +9,13 @@ var profile = get(".profile"); // Select Nav-Items
 var navIndex = get(".nav__index");
 var navBookmarks = get(".nav__bookmarks");
 var navCreate = get(".nav__create");
-var navProfile = get(".nav__profile"); // Nav Event Listeners
+var navProfile = get(".nav__profile"); // Answer Toggle
+
+var answerButton = get(".card__button");
+var answerText = get(".card__answer");
+answerButton.addEventListener("click", function () {
+  answerText.classList.toggle("blurred");
+}); // Nav Event Listeners
 
 navIndex.addEventListener("click", function () {
   nav(index);

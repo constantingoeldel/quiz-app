@@ -1,9 +1,9 @@
 .hidden {
   display: none;
 }
-.nav-active {
-  border: white 2px solid;
-  border-radius: 10px;
+.blurred {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .m-20 {
