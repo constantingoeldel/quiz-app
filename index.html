@@ -16,14 +16,18 @@
     <script defer src="main.js"></script>
   </head>
   <body>
+    <!-- Site Header-->
     <header>
       <h1>Quiz-App</h1>
     </header>
-    <main>
+    <!-- Index-->
+    <main class="index">
       <section class="card">
         <h2 class="card__h2">Question:</h2>
         <input class="card__bookmark" type="checkbox" />
-        <p class="card__question">Welcher Planet ist der Sonne am nächsten?</p>
+        <p class="card__question">
+          Welcher Planet ist der Sonne am nächsten?
+        </p>
         <button class="card__button">Antwort anzeigen</button>
         <p class="card__answer">Es ist Merkur</p>
         <ul class="card__tags">
@@ -35,7 +39,9 @@
       <section class="card">
         <h2 class="card__h2">Question:</h2>
         <input class="card__bookmark" type="checkbox" />
-        <p class="card__question">Welcher Planet ist der Sonne am nächsten?</p>
+        <p class="card__question">
+          Welcher Planet ist der Sonne am nächsten?
+        </p>
         <button class="card__button">Antwort anzeigen</button>
         <p class="card__answer">Es ist Merkur</p>
         <ul class="card__tags">
@@ -47,7 +53,9 @@
       <section class="card">
         <h2 class="card__h2">Question:</h2>
         <input class="card__bookmark" type="checkbox" />
-        <p class="card__question">Welcher Planet ist der Sonne am nächsten?</p>
+        <p class="card__question">
+          Welcher Planet ist der Sonne am nächsten?
+        </p>
         <button class="card__button">Antwort anzeigen</button>
         <p class="card__answer">Es ist Merkur</p>
         <ul class="card__tags">
@@ -59,7 +67,9 @@
       <section class="card">
         <h2 class="card__h2">Question:</h2>
         <input class="card__bookmark" type="checkbox" />
-        <p class="card__question">Welcher Planet ist der Sonne am nächsten?</p>
+        <p class="card__question">
+          Welcher Planet ist der Sonne am nächsten?
+        </p>
         <button class="card__button">Antwort anzeigen</button>
         <p class="card__answer">Es ist Merkur</p>
         <ul class="card__tags">
@@ -69,19 +79,86 @@
         </ul>
       </section>
     </main>
-    <footer class="footer">
-      <nav class="footer__nav">
-        <a class="footer__active" href="index.html"
-          ><img src="img/svg/list.svg" alt="Home" />Home</a
+    <!-- Bookmarks-->
+    <main class="bookmarks hidden">
+      <section class="card">
+        <h2 class="card__h2">Question:</h2>
+        <input class="card__bookmark" type="checkbox" checked />
+        <p class="card__question">
+          Welcher Planet ist der Sonne am nächsten?
+        </p>
+        <button class="card__button">Antwort</button>
+        <p class="card__answer">Es ist offensichtlich Merkur</p>
+        <ul class="card__tags">
+          <li>Astronomie</li>
+          <li>Weltraum</li>
+          <li>Allgemeinwissen</li>
+        </ul>
+      </section>
+    </main>
+    <!-- Create-->
+    <main class="create hidden">
+      <form class="form">
+        <label for="input-question" class="create-label" for="input"
+          >Neue Frage hinzufügen:</label
         >
-        <a href="bookmarks.html"
-          ><img src="img/svg/003-bookmark.svg" alt="bookmarks" />Marked</a
+        <textarea id="input-question" class="create__question"></textarea>
+        <label for="input-answer">Dazugehörige Antwort:</label>
+        <textarea id="input-answer" class="create__answer"></textarea>
+        <label for="input-tags">Tags hinzufügen:</label>
+        <textarea id="input-tags" class="create__tags"></textarea>
+        <button class="create__submit">Fertig</button>
+      </form>
+    </main>
+    <!-- Profile -->
+    <main class="profile hidden">
+      <h2 class="username">Constantin Goeldel</h2>
+      <br />
+      <img class="profile__picture" src="img/boat.jpg" alt="profile-picture" />
+      <p class="bio">
+        Ich bin im Hamburger Stadtteil Winterhude aufgewachsen und bisher auch
+        noch nicht (ist ja auch ganz schön hier). Corona hatte für mich recht
+        große Auswirkungen, da ich in dieser Zeit mein Abitur schreiben sollte
+        und lange Zeit nicht klar war, ob es stattfinden würde. Die viele freie
+        Zeit kam aber gelegen, so konnte ich mir mit einem Freund einen
+        3D-Drucker bauen und eine verlängerte Abireise genießen (Wenn auch nur
+        nach Schlewig-Holstein). Nach dem Bootcamp hätte ich richtig Lust, in
+        einem Start-Up zu arbeiten, eines zu gründen und, natürlich, auf den
+        Mars zu fliegen.:)
+      </p>
+      <section>
+        <ul class="profile__tags">
+          <li>Astronomie</li>
+          <li>Weltraum</li>
+          <li>Allgemeinwissen</li>
+        </ul>
+      </section>
+      <button>Logout</button>
+    </main>
+    <!-- Site Footer-->
+    <footer>
+      <nav class="nav">
+        <a><img class="nav__index" src="img/svg/list.svg" alt="Home" />Home</a>
+        <a
+          ><img
+            class="nav__bookmarks"
+            src="img/svg/003-bookmark.svg"
+            alt="bookmarks"
+          />Marked</a
         >
-        <a href="create.html"
-          ><img src="img/svg/write.svg" alt="profile" />Create</a
+        <a
+          ><img
+            class="nav__create"
+            src="img/svg/write.svg"
+            alt="create"
+          />Create</a
         >
-        <a href="profile.html"
-          ><img src="img/svg/002-user.svg" alt="profile" />Profile</a
+        <a
+          ><img
+            class="nav__profile"
+            src="img/svg/002-user.svg"
+            alt="profile"
+          />Profile</a
         >
       </nav>
     </footer>

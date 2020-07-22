@@ -5,24 +5,20 @@ footer {
   z-index: 99;
   background: var(--footer-background-gradient);
 }
-.footer__nav {
+.nav {
   display: flex;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   text-align: center;
   justify-content: space-evenly;
   padding: 10px;
 }
-.footer__nav > a {
+.nav > a {
   text-decoration: none;
   color: black;
   font-size: 100%;
   padding: 5px;
 }
-.footer__nav > a > img {
+.nav > a > img {
   max-height: 50px;
   padding: 15px;
-}
-.footer__active {
-  border: white 2px solid;
-  border-radius: 10px;
 }
