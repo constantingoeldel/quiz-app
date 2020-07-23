@@ -5,7 +5,16 @@
   color: transparent;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
+.darkmode {
+  background: rgb(40, 38, 48);
+}
+.card__bookmark--active {
+  color: white;
+}
 
+.svg__darkmode {
+  fill: white;
+}
 .m-20 {
   margin: 20px;
 }
